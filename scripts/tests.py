@@ -73,10 +73,10 @@ def test_model(model, test_loader, device, config):
 
                 pbar.update(1)
 
-    # Basic report
-    for idx, result in enumerate(results):
-        print(f"\nImage {idx + 1}")
-        print(f"Predicted boxes: {len(result['pred_boxes'])}")
-        print(f"Ground truth boxes: {len(result['target_boxes'])}")
+    # # Basic report
+    # for idx, result in enumerate(results):
+    #     print(f"\nImage {idx + 1}")
+    #     print(f"Predicted boxes: {len(result['pred_boxes'])}")
+    #     print(f"Ground truth boxes: {len(result['target_boxes'])}")
 
     print("Testing completed.")
